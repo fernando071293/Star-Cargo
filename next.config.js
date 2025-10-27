@@ -4,6 +4,7 @@ const { i18n } = require('./next-i18next.config');
 const nextConfig = {
   i18n,               
   trailingSlash: true,
+  i18n,
   reactStrictMode: true,
   swcMinify: true,
   images: {
