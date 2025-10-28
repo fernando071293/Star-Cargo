@@ -1,3 +1,2 @@
-export default function NotFound() {
-  return <div style={{ padding: 24 }}>Página no encontrada</div>;
-}
+import { Redirect } from '../lib/redirect'
+export default Redirect
