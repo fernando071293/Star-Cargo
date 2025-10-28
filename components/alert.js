@@ -1,7 +1,6 @@
-import Container from './container';
-import cn from 'classnames';
-import { EXAMPLE_PATH } from '../lib/constants';
-import Link from 'next/link';
+import Container from './container'
+import cn from 'classnames'
+import { EXAMPLE_PATH } from '../lib/constants'
 
 export default function Alert({ preview }) {
   return (
@@ -16,12 +15,12 @@ export default function Alert({ preview }) {
           {preview ? (
             <>
               This page is a alert example.{' '}
-              <Link
+              <a
                 href="/api/exit-preview"
                 className="underline hover:text-cyan duration-200 transition-colors"
               >
                 Click here
-              </Link>{' '}
+              </a>{' '}
               to exit preview mode.
             </>
           ) : (
@@ -39,5 +38,5 @@ export default function Alert({ preview }) {
         </div>
       </Container>
     </div>
-  );
+  )
 }
