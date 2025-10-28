@@ -1,4 +1,5 @@
-export async function getServerSideProps() {
-  return { redirect: { destination: '/es/home/', permanent: false } };
+export async function getServerSideProps({ params }) {
+  const { locale } = params;
+  return { redirect: { destination: `/${locale}/home/`, permanent: false } };
 }
-export default function Index() { return null; }
+export default function LocaleIndex() { return null; }
