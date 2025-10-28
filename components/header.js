@@ -3,7 +3,7 @@ import DropdownLanguage from '../components/dropdown-language'
 import Link from '../components/Link'
 import { useRouter } from "next/router";
 import { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next'
 
 export default function Header({
   transparent
